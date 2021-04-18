@@ -1,0 +1,141 @@
+.footer {
+  background-color: $primary-bgncolor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}
+
+.footer-address-box {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: inherit;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+}
+
+.footer-address {
+  display: inline-block;
+  width: 232px;
+
+  @media screen and (min-width: 768px) {
+    width: 231px;
+  }
+}
+
+.address-list__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address-list__link {
+  color: var(--footer-text-color);
+
+  @include font(400, 14px, 24px, 0.03em);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.address-list__link-map {
+  color: var(--secondary-accent-text-color);
+}
+
+// присоединяйтесь
+.footer-case {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: inherit;
+    margin-right: 93px;
+  }
+}
+
+.footer-description {
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--secondary-accent-text-color);
+
+  @include font(700, 14px, 16px, 0.03em);
+  text-transform: uppercase;
+}
+
+// подпишись на рассылку
+.footer-subscribe {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: inherit;
+  }
+}
+
+.subscribe-form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.subscribe-form__input {
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  width: 100%;
+  height: 50px;
+
+  @include font(400, 16px, 20px, 0.03em);
+
+  color: var(--secondary-accent-text-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0px;
+    margin-right: 12px;
+  }
+
+  &::placeholder {
+    color: var(--footer-text-color);
+  }
+}
+
+.subscribe-form__icon {
+  fill: currentColor;
+  margin-left: 10px;
+
+  // .footer-btn:hover & {
+  //   fill: $primary-bgncolor;
+  // }
+}

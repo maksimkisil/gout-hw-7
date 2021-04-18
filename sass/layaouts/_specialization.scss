@@ -1,0 +1,37 @@
+.specialization {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+    padding-top: 47px;
+    padding-bottom: 94px;
+  }
+}
+
+.specialization-list {
+  display: flex;
+}
+
+.specialization-list__item {
+  position: relative;
+  text-align: center;
+
+  &:not(:nth-child(3n + 3)) {
+    margin-right: 30px;
+  }
+}
+
+.image-overlay {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  padding: 27px 0;
+  bottom: 0;
+  left: 0;
+
+  color: var(--secondary-accent-text-color);
+  background-color: var(--specialization-overlay);
+
+  @include font(700, 14px, 16px, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+}

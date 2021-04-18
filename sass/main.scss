@@ -1,0 +1,28 @@
+@import './utills/varible';
+@import './utills/visually-hidden';
+@import './utills/mixins';
+
+@import './base/common';
+@import './base/container';
+@import './base/section';
+
+@import './comp/logo';
+@import './comp/button';
+@import './comp/title';
+@import './comp/social-links';
+@import './comp/animation';
+
+@import './comp/mobile-menu-form';
+@import './comp/mobile-menu';
+
+@import './comp/backdrop';
+@import './comp/modal';
+@import './comp/modal-form';
+
+@import './layaouts/header';
+@import './layaouts/hero';
+@import './layaouts/features';
+@import './layaouts/specialization';
+@import './layaouts/team';
+@import './layaouts/clients';
+@import './layaouts/footer';

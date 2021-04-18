@@ -1,0 +1,38 @@
+.logo {
+  @include font(700, 24px, 28px, 0.03em);
+  font-family: 'Raleway', sans-serif;
+
+  @media screen and (min-width: 1200px) {
+    @include font(700, 26px, 31px, 0.03em);
+  }
+
+  &_dark-theme {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    color: var(--logo-text-color);
+
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+      padding-top: 26px;
+      padding-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+      padding-top: 24px;
+      padding-bottom: 25px;
+    }
+  }
+
+  &_light-theme {
+    display: block;
+    margin-bottom: 20px;
+
+    color: var(--secondary-accent-text-color);
+  }
+
+  &__acent {
+    color: var(--accent-text-color);
+  }
+}

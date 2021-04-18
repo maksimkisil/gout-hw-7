@@ -1,0 +1,18 @@
+.backdrop {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  overflow-y: scroll;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  transform: scale(1);
+  transition: transform 400ms ease-out;
+}

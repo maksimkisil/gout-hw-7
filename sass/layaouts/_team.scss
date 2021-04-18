@@ -1,0 +1,61 @@
+.team {
+  background-color: var(--secondary-bgncolor);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
+
+.team-list__item {
+  width: 100%;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--secondary-accent-text-color);
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+    width: 354px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
+    // flex-basis: calc((100% - 30px) / 2);
+    width: 270px;
+  }
+}
+
+.team-list__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-list__subtitle {
+  margin-bottom: 10px;
+
+  @include font(400, 16px, 19px, 0.03em);
+  text-align: center;
+}
+
+.team-list__profession {
+  @extend .team-list__subtitle;
+  color: var(--secondary-text-color);
+}
